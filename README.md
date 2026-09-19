@@ -55,6 +55,16 @@ Network -> ?
 
 --
 
+working `--help` command -> also part of usable documentation instead of `README.md`. Here i will gather more of non-API things or thoughts
+
+`-v` and `--verbose` -> any feature will be more useful with this?
+
+--
+
+interactive mode -> work with user confirmations and input, `-i` and `--interactive`
+
+--
+
 After output to the terminal, think about output to json for example
 
 ## Dev notes
