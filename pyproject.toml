@@ -1,7 +1,7 @@
 [project]
 name = "py-sysinfo-cli"
 version = "0.1.0"
-description = "Add your description here"
+description = "Non-production linux system information CLI written in Python to practice language skills"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = []
