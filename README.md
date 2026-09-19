@@ -77,5 +77,17 @@ This is the section with reasoning about tools, that i have choosen or some thou
 
 Draft of feature in `README.md` as human-readable text -> tests -> minimal code -> polish code -> polish doc.
 
+### Python view to adopt
+
+#### Project structure
+
+`__init__.py` is the public API, where `__all__` is for the `from module import *`, but also this file is the one that should initialise the package, so it is not like 1-2-1 comparison with public API file
+// todo: figure this out
+
+#### Testing things
+
+Unit tests are not colocated with the source code and this is kind of weird for me.
+
+Text description of the tests is absent, think about adding test class structure to wrap unit tests in describe like origanisation.
 
 ## Useful links
