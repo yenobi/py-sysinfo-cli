@@ -1,7 +1,5 @@
 from io import StringIO
 
-import pytest
-
 from sysinfo.uptime import GetUptimeErrors, get_uptime
 
 
