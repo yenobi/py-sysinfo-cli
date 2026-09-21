@@ -13,6 +13,10 @@ You are welcome to create issues with recommendations, propositions or to point 
 
 ### How to run tests
 
+## Dev feature list
+
+- think about CI automation (looks like github actions is the way to go, but let's add it after one full feature)
+
 ## Feature list
 
 ```C
