@@ -8,7 +8,7 @@ def test_get_uptime_returns_float():
     assert isinstance(uptime, float)
 
 
-def generate_mock_open(error: type[FileNotFoundError] | type[ValueError]):
+def generate_mock_open(error: type[FileNotFoundError | ValueError]):
     def mock_open_file_error(*args, **kwargs):
         raise FileNotFoundError
 
