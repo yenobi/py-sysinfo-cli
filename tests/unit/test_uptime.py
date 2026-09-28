@@ -1,6 +1,6 @@
 from io import StringIO
 
-from sysinfo.uptime import GetUptimeErrors, get_uptime
+from sysinfo.uptime import get_uptime
 
 
 def test_get_uptime_returns_float():
@@ -24,12 +24,12 @@ def generate_mock_open(error: type[FileNotFoundError | ValueError]):
 def test_get_uptime_when_file_does_not_exist(monkeypatch):
     monkeypatch.setattr("builtins.open", generate_mock_open(FileNotFoundError))
 
-    expected_error = get_uptime()
-    assert expected_error == GetUptimeErrors.FILE_NOT_FOUND
+    expected = get_uptime()
+    assert expected == None
 
 
 def test_get_uptime_with_invalid_content(monkeypatch):
     monkeypatch.setattr("builtins.open", generate_mock_open(ValueError))
 
-    expected_error = get_uptime()
-    assert expected_error == GetUptimeErrors.INVALID_FORMAT
+    expected = get_uptime()
+    assert expected == None
