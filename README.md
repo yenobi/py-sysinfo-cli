@@ -11,7 +11,11 @@ You are welcome to create issues with recommendations, propositions or to point 
 
 ### How to use
 
-### How to run tests
+### Testing
+
+#### Unit test
+
+Run `uv run pytest` to execute unit test via `pytest`
 
 ## Dev feature list
 
