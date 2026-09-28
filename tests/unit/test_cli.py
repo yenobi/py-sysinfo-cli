@@ -5,8 +5,15 @@ def test_cli_prints_sysinfo(capsys):
     main()
 
     captured = capsys.readouterr()
+    lines = captured.out.strip().splitlines()
+    header = lines[0]
+    divider = lines[1]
+    # there is an empty line between the divider and the uptime line, so we need to get the uptime line from index 3
+    uptime_line = lines[3]
 
-    # print adds a newline character at the end of the output by default
-    assert captured.out == "sysinfo\n"
+    assert header == "System Information"
+    assert divider == "------------------"
+    assert uptime_line.startswith("Uptime: ")
+
     # validate that nothing was printed to stderr
     assert captured.err == ""
