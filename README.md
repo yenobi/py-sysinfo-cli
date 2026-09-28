@@ -21,6 +21,10 @@ Run `uv run pytest` to execute unit test via `pytest`
 
 - think about CI automation (looks like github actions is the way to go, but let's add it after one full feature)
 
+### Tech debt
+
+TODO: handle `2 days with 0 hours, 0 minutes, and 5 seconds` case in the formatter
+
 ## Feature list
 
 ```C
